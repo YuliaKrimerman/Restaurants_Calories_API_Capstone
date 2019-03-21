@@ -1,4 +1,3 @@
-'use strict';
 // Scroll Function
 $('.fill').on('click', function (e) {
     e.preventDefault();
@@ -50,6 +49,7 @@ function displayFoodResults(results, status) {
       `);
             var restaurantMarker = new google.maps.Marker({
                 position: results[i].geometry.location,
+                icon: 'https://i.ibb.co/7YM18K2/output-onlinepngtools-1.png',
                 map: map
             })
         }
@@ -60,7 +60,6 @@ function displayFoodResults(results, status) {
         $('.js-restaurant-results').html(`<p>but, we couldn't find any restaurants! Try increasing your search distance or entering a new location.</p>`)
     }
 }
-
 
 // Loads Map and displays restaurant Results 
 function initPlaceMap(searchCoord, searchDist) {
