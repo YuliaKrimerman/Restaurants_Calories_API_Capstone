@@ -61,6 +61,7 @@ function displayFoodResults(results, status) {
     }
 }
 
+
 // Loads Map and displays restaurant Results 
 function initPlaceMap(searchCoord, searchDist) {
     let searchArea = new google.maps.LatLng(searchCoord.lat, searchCoord.lng);

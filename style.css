@@ -1,146 +1,155 @@
-*{
-  margin: 0;
-  border:0;
-  padding: 0;
-  font-size: 100%;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-   scroll-behavior: smooth;
+body,
+html {
+    height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
 }
+
 h1 {
-  font-size: 45px;
-  padding: 10px;
+    font-size: 45px;
+    padding: 10px;
 }
 
-h2{
-  font-size: 30px;
+h2 {
+    font-size: 30px;
 }
-.parallax { 
-  background-image: url("https://static.mycity.travel/manage/uploads/6/33/20026/f706b5e0839d6ec619b13ecfe60073d882bb4fc6_1080.jpg");
-  height: 600px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.parallax {
+    background-image: url("https://static.mycity.travel/manage/uploads/6/33/20026/f706b5e0839d6ec619b13ecfe60073d882bb4fc6_1080.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.parallax2 { 
-  background-image: url("https://justcheckit.co/wp-content/uploads/2017/06/dining-1024x683.jpg");
-  height: 700px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.parallax2 {
+    background-image: url("https://justcheckit.co/wp-content/uploads/2017/06/dining-1024x683.jpg");
+    height: 700px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.parallax3 { 
-  background-image: url("https://i.ibb.co/qWrsJJb/splash.jpg");
-  height: 400px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+.parallax3 {
+    background-image: url("https://i.ibb.co/qWrsJJb/splash.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
-  color: white;
-  opacity: 0.8;
-  padding: 20px;
-  display: block;
-  width:55%;
-  text-align: center;
-  float:right;
-  margin-top: 100px;
-  font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    opacity: 0.8;
+    padding: 20px;
+    display: block;
+    width: 55%;
+    text-align: center;
+    float: right;
+    margin-top: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 
 #button {
-  position: relative;
-  height: 45px;
-  margin: 50px 7px;
-  padding: 10px 10px;
-  top:30px;
-  font-weight: 700;
-  font-size: 25px;
-  letter-spacing: 2px;
-  color: WHITE;
-  border: 4px white solid;
-  border-radius: 6px;
-  text-transform: uppercase;
-  outline: 0;
-  overflow:hidden;
-  background: none;
-  z-index: 1;
-  cursor: pointer;
-  transition:         0.08s ease-in;
-  -o-transition:      0.08s ease-in;
-  -ms-transition:     0.08s ease-in;
-  -moz-transition:    0.08s ease-in;
-  -webkit-transition: 0.08s ease-in;
-  text-decoration: none;
+    position: relative;
+    height: 45px;
+    margin: 50px 7px;
+    padding: 10px 10px;
+    top: 30px;
+    font-weight: 700;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: WHITE;
+    border: 4px white solid;
+    border-radius: 6px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.08s ease-in;
+    -o-transition: 0.08s ease-in;
+    -ms-transition: 0.08s ease-in;
+    -moz-transition: 0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+    text-decoration: none;
 }
 
 .fill:hover {
-  color: whitesmoke;
+    color: whitesmoke;
 }
 
 .fill:before {
-  content: "";
-  position: absolute;
-  background: WHITE;
-  bottom: 0;
-  opacity: 0.5;
-  left: 0;
-  right: 0;
-  top: 100%;
-  z-index: -1;
-  -webkit-transition: top 0.09s ease-in;
+    content: "";
+    position: absolute;
+    background: WHITE;
+    bottom: 0;
+    opacity: 0.5;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
 }
 
 .fill:hover:before {
-  top: 0;
+    top: 0;
 }
 
 .white {
-  background: white;
-  height: 100px;
+    background: white;
+    height: 100px;
 }
 
 .white1 {
-  background: white;
-  height: 50px;
+    background: white;
+    height: 50px;
 }
+
 footer {
-  background: white;
-  height: 100px;
+    background: white;
+    height: 100px;
 }
- legend {
-   font-size:55px;
-   padding: 15px;
- }
+
+legend {
+    font-size: 55px;
+    padding: 15px;
+}
+
 h4 {
-  color:black;
-  font-size: 45px;
-  margin-top: 10px;
-font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    font-size: 45px;
+    margin-top: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 fieldset {
-  font-size: 45px;
-  display: block;
-  margin: auto;
-  margin-top: 10px;
-  font-weight:bold;
+    font-size: 45px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: bold;
 }
+
 .listFood {
-     background: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.55);
     background-clip: content-box;
     background-position: center;
     display: inline-block;
@@ -149,97 +158,101 @@ fieldset {
     width: 100%;
     height: 420px;
     border: none;
-  font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
-.calculator, section {
-  background-color: rgb(255, 255, 255);
-  opacity: 0.6;
-  margin-top: 5%;
-  padding: 20px;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-  height: 250px;
-  font-family: 'Roboto', sans-serif;
-  border:none;
-}
-
-
-h3{
-  font-size: 30px;
-  margin-top: 80px;
+.calculator,
+section {
+    background-color: rgb(255, 255, 255);
+    opacity: 0.6;
+    margin-top: 5%;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
 }
 
 
-#search-loc, #max-distance,.js-search-term {
-  background: none;
-  font-size: 20px;
-  border:3px solid black;
-  border-radius: 6px;
-  width:20%;
-  height: 40px;
-  text-align: center;
+h3 {
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+
+#search-loc,
+#max-distance,
+.js-search-term {
+    background: none;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 6px;
+    width: 20%;
+    height: 40px;
+    text-align: center;
 }
 
 :-webkit-input {
-  text-align: center;
+    text-align: center;
 }
 
-.logos{
-  padding: 15px;
-  text-align: center;
+.logos {
+    padding: 15px;
+    text-align: center;
 }
 
-p{
-  font-size:30px;
-  padding: 10px;
-  font-weight: bolder;
-  font-family: 'Source Sans Pro', sans-serif;
+p {
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bolder;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .display-map {
-  height: 300px;
-  width:80%;
-  margin-top: 15px;
-  position:absolute;
-  margin-left: 10%;
-  margin-right:10%;
-   overflow-y: auto;
-  font-family: 'Source Sans Pro', sans-serif;
-  align-content: center;
+    height: 300px;
+    width: 80%;
+    margin-top: 15px;
+    position: absolute;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow-y: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    align-content: center;
 }
 
 #map {
-  height:100%;
-   position:fixed;
-  
+    height: 100%;
+    position: fixed;
+
 }
 
 .hiddenCal {
-  display: none;
+    display: none;
 }
 
 h5 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+    content: "";
+    clear: both;
+    display: table;
 }
 
-.restaurant-results{
-  font-size: 50px;
+.restaurant-results {
+    font-size: 50px;
 }
 
-.styleButton, #reload{
-  background: none;
-font-family: 'Caveat', cursive;
- font-size: 30px;
- width: 10%;
- margin-top: 10px;
- cursor:pointer;
- font-weight:bold;
+.styleButton,
+#reload {
+    background: none;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    width: 10%;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
 }
