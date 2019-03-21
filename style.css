@@ -251,8 +251,89 @@ h5 {
     background: none;
     font-family: 'Caveat', cursive;
     font-size: 30px;
-    width: 10%;
+    width: 100px;
     margin-top: 10px;
     cursor: pointer;
     font-weight: bold;
 }
+
+@media only screen and (max-width: 1024px) {
+    header {
+        text-align: center;
+    }
+
+    #search-loc,
+    #max-distance,
+    .js-search-term {
+        width: 200px;
+    }
+
+    h1 {
+        margin-top: -60px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .white1 {
+        height: 20px;
+
+    }
+
+    .calculator,
+    section {
+        height: 300px;
+    }
+
+    .parallax {
+        background-position: top;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .calculator,
+    section {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 25px;
+        float: none;
+        margin-top: -80px;
+
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-left: auto;
+    }
+
+    .listFood {
+        height: 500px;
+    }
+
+    @media only screen and (max-width: 320px) {
+
+        legend,
+        h4 {
+            font-size: 35px;
+        }
+
+        h3,
+        p {
+            font-size: 28px;
+        }
+    }
+
+    h4 {
+        font-size: 35px;
+    }
