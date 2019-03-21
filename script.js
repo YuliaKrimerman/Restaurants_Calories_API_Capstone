@@ -1,10 +1,9 @@
-// Scroll Function
+// Scroll  Button Function
 $('.fill').on('click', function (e) {
     e.preventDefault();
     $('body, html').animate({
         scrollTop: $($(this).attr('href')).offset().top
     }, 600);
-
 });
 
 // Geolocation+Places API
@@ -36,7 +35,7 @@ function convertLocToLatLong(searchLoc, searchDist) {
             $('#slogan').empty().html(`There you go:`).addClass('after-results');
         })
 }
-
+//Function Displays Map anf Restaurant List 
 function displayFoodResults(results, status) {
     $('.js-restaurant-results').empty();
     if (status == google.maps.places.PlacesServiceStatus.OK) {
@@ -80,11 +79,6 @@ function initPlaceMap(searchCoord, searchDist) {
     service.nearbySearch(request, displayFoodResults)
 }
 
-
-
-
-
-
 // Listens to submit form event to display results for user
 function watchGeo() {
     $('.listFood').submit(event => {
@@ -108,18 +102,20 @@ function validateSearchRadius(location, dist) {
 
 
 
-
-//Calories Api
+//Calories Count Api
 const myId = '36b9ac51';
 const myKey = '7a8a7a9d263c994ed5ffc425f2b20dc7';
 const mainUrl = 'https://api.edamam.com/api/food-database/parser';
 
+
+// Function that formats the Ingredients for the API URL
 function formatIngridients(params) {
     const queryItems = Object.keys(params)
         .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`)
     return queryItems.join('&');
 }
 
+//Function that creates the URL and sends the API request
 function getCalories(searchTerm) {
     const params = {
         ingr: searchTerm,
@@ -142,22 +138,19 @@ function getCalories(searchTerm) {
             $('#js-error-message').text(`Something went wrong: ${err.message}`);
         });
 }
-
+// Function that displays the results from the Edamam API 
 function displayResults(responseJson) {
-
     $('#results-list').empty();
     for (let i = 0; i < responseJson.parsed.length; i++) {
-        $('#results-list').append(
-            `
+        $('#results-list').append(`
       <p>Your ${responseJson.text} is worth ${responseJson.parsed[i].food.nutrients.ENERC_KCAL} calories</p>
-    `
-        )
+    `)
     };
     $('#results').removeClass('hiddenCal');
     $('.input-before').addClass('hiddenCal');
 };
 
-
+// Function that watches for search input 
 function watchCal() {
     $('.calories').submit(event => {
         event.preventDefault();
