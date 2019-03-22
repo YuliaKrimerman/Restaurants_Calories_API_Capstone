@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -15,24 +15,25 @@
 <body>
     <div class="white1"></div>
     <div class="parallax">
+
         <header>
             <h1> Love to explore new restaurants<br> but also love to keep track of your calorie intake?</h1>
             <h2> Scroll down and let's do it together </h2>
-            <a type="button" id="button" href="#parallax2" class="fill">Scroll</a>
+            <a type="button" role="button" id="button" href="#parallax2" class="fill">Scroll</a>
         </header>
     </div>
     <main>
         <div class="white"></div>
         <div class="parallax2" id="parallax2">
             <form class="listFood">
-                <div class='restaurants-before'>
+                <div class='restaurants-before' role="dialog" aria-labelledby="dialog1Title" aria-describedby="dialog1Desc">
                     <h3 id='slogan'>Let's find a place to dine out</h3>
                     <fieldset>
                         <legend>Where do you want to eat?</legend>
-                        <input for="City or Zipcode" type="text" placeholder="Enter city or zipcode" id='search-loc' required>
-                        <input for="Search Radius" type="text" placeholder="Search radius (miles)" id='max-distance' required>
+                        <input for="City or Zipcode" aria-labelledby="PlaceInfo" aria-describedby="Adress" type="text" placeholder="Enter city or zipcode" id='search-loc' required>
+                        <input for="Search Radius" type="text" aria-labelledby="Search-Rdius" aria-describedby="Radius" placeholder="Search radius (miles)" id='max-distance' required>
                     </fieldset>
-                    <input type="submit" class="styleButton">
+                    <input role="button" type="submit" class="styleButton">
                 </div>
                 <div class="restaurants-after">
                     <div class=" display-map clearfix">
@@ -41,9 +42,11 @@
                             <ul class='js-restaurant-results'> </ul>
                         </div>
                     </div>
+
                 </div>
             </form>
         </div>
+
         <div class="white"></div>
         <div class="parallax3">
             <div class="input-before">
@@ -52,7 +55,7 @@
                         <h4> Now let's calculate those calories </h4>
                         <p> Enter Food here: </p>
                         <input for=" Food type" type="text" required class="js-search-term">
-                        <br> <input type="submit" class="styleButton">
+                        <br> <input role="button" type="submit" class="styleButton">
                     </form>
                 </div>
             </div>
@@ -67,7 +70,7 @@
     <footer class="contact">
         <div class="logos">
             <a href="https://www.linkedin.com/in/julia-yulia-krimerman-4a368a12a/" title="LinkedIn Profile"> <img src="https://image.flaticon.com/icons/png/512/61/61109.png" alt="Linked in Logo" style="width:48px;height:48px;"></a>
-            <a href="mailto:juliakrimerman@gmail.com" title="Email me"><img src="http://www.logospng.com/images/5/white-email-logo-pictures-to-pin-on-pinterest-pinsdaddy-5992.png" alt="Email Logo" style="width:50px;height:48px;"></a>
+            <a href="mailto:juliakrimerman@gmail.com" title="Email me"><img src="https://i.ibb.co/HKkgD24/iconfinder-web-ui-by-juliia-osadcha-70990.png" alt="Email Logo" style="width:50px;height:48px;"></a>
             <a href="https://github.com/Juliakrimerman" title="Github Progile"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" alt="GitHub Logo" style="width:48px;height:48px;"></a>
         </div>
     </footer>
