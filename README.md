@@ -7,12 +7,11 @@ Live Demo: https://web-app-capstone--yuliakrimerman.repl.co/
 
 The purpose of this app is to allow people to search for restaurants and places to dine out, but also to keep track of the calories
 that they consume when they eat outside. It's very useful for people who love to explore new dining places but don't want to loose 
-track of the calorie intake because they are on a diet, have a calorie goal they want to achieve or are just mindful of they eat and 
-how much calories it's worth. 
+track of the calorie intake because they are on a diet, have a calorie goal they want to achieve or are just mindful of what they eat and how much calories it's worth. 
 
-The App is divided in 2 parts. The first part requires the user to insert a city or a zipcode and a searchradius for the restaurants
+The App is divided in 2 parts. The **first part** requires the user to insert a city or a zipcode and a searchradius for the restaurants
 in the desired area. It provides results of  Google maps and a list of restaurants that are displayed on the map.
-The second part requires the user to type in any kind of food or meal they have consumed in one of the restaurants. The results 
+The **second part** requires the user to type in any kind of food or meal they have consumed in one of the restaurants. The results 
 that are returned is an approximate estimate of the calories in that meal based on average size of the meal. 
 
 ### Main Page View 
